@@ -24,12 +24,14 @@ for x in range(2, 10, 3):
 
 # expression can be a function
 
+
 def myFunc(x):
     x *= 2
     return x
 
+
 # notice l is a new variable, not a refernece to some other list (range(0,5,1) in this case)
-l = [myFunc(x) for x in range(0, 5, 1)] 
+l = [myFunc(x) for x in range(0, 5, 1)]
 print(l)
 
 ############
@@ -46,6 +48,10 @@ print(midColors)
 # watch it - the iterable collection can be modified
 # but, the 'color' is always the next item in the iterable list
 # and does not change the iterable collection
+# (if you are familiar with c-family and/or memory management:
+#   * color' is a primitive, whereas...
+#   * values within structures are stored as a reference)
 for color in c_list:
     color = "purple"
     c_list[1] = "orange"
+print(c_list)
