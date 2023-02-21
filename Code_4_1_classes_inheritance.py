@@ -3,16 +3,21 @@ class Animal:
     genus = 'mammal'
 
     def __init__(self):
-       pass
+        pass
 
     def play(self):
         print('animals like to play')
 
+
+# every Dog is an Animal
 class Dog(Animal):
     genus = 'canine'
 
+
+# every Cat is an Animal
 class Cat(Animal):
     genus = 'feline'
+
 
 eleven = Animal()
 piper = Dog()

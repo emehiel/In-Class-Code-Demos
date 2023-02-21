@@ -18,7 +18,7 @@ L2 = L[:2]
 # Lists are Ordered, Changeable, and Allow Duplicates
 
 # List methods
-L.insert(1,5)
+L.insert(1, 5)
 L.sort()
 #thisList.sort() - error
 
@@ -71,11 +71,11 @@ print(thisSet)
 ###############################################
 # Dictionaries (slide 6)
 # Basic definition - a set of key:value pairs
-D = {'a' : 65, 'b' : 66}
+D = {'a': 65, 'b': 66}
 
 
 # A dictionary can contain differt type elements
-thisDictionary = {'a' : 65, 3 : 2+4j, 'colors' : ['R', 'G', 'B']}
+thisDictionary = {'a': 65, 3: 2+4j, 'colors': ['R', 'G', 'B']}
 
 
 # Dictionaries cannot be indexed
@@ -102,8 +102,9 @@ for x in thisList:
 
 #############
 # finding elements with in (slide 8)
-thislist = ["apple","banana","cherry"]
-if "apple" in thislist: print("Yes, 'apple' is in the fruits list")
+thislist = ["apple", "banana", "cherry"]
+if "apple" in thislist:
+    print("Yes, 'apple' is in the fruits list")
 
 #############
 # List comprahension (slide 9)
@@ -119,6 +120,6 @@ L3 = L
 L[1] = 'a'  # both L and L3 change
 
 L4 = L.copy()
-L[2] = 'b' # L and L3 change, L4 does not
+L[2] = 'b'  # L and L3 change, L4 does not
 
 print(L)
