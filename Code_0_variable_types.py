@@ -9,10 +9,10 @@ and will be ignored by Python
 
 # Python is dynamically typed (slide 9)
 
-x = 2 #int
-y = 2. #float
+x = 2  # int
+y = 2.  # float
 
-s = str(3) # cast an int to a double
+s = str(3)  # cast an int to a double
 s = 'name'
 s = "name"
 
@@ -23,7 +23,7 @@ print(sType)
 xType = type(x)
 print(xType)
 
-thisVariable = 42 # camelCase
+thisVariable = 42  # camelCase
 
 x, y, z = 1, 2, 3
 x = y = z = 'strange'
@@ -36,8 +36,8 @@ print(s)
 A = 'string'
 print(A[1])
 
-age =3
-txt ="My name is John, and I am {}"
+age = 3
+txt = "My name is John, and I am {}"
 print(txt.format(age))
 
 # Operators to watch (slide 14)

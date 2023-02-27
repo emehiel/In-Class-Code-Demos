@@ -3,6 +3,7 @@
 def my_function():
     print("Hello from a function")
 
+
 my_function()
 
 
@@ -15,6 +16,7 @@ def my_function(l, i):
     for x in l:
         print(x)
 
+
 L = [1, 2, 3]
 i = 3
 
@@ -25,32 +27,44 @@ print(i)
 
 #############
 # Advanced Arguments (slide 5)
+
+
 def my_func1(*args):
     for x in args:
         print(x)
 
+
 my_func1(1, 'a')
 
-def my_func2(**kid):
-  print("His last name is " + kid["lname"])
 
-my_func2(fname = "Tobias", lname = "Refsnes")
+def my_func2(**kid):
+    print("His last name is " + kid["lname"])
+
+
+my_func2(fname="Tobias", lname="Refsnes")
+
 
 def my_func3(a, b):
     print(a, b)
 
-my_func3(b = 'three', a = 'a')
 
-def my_func4(course = 'Aero 470'):
+my_func3(b='three', a='a')
+
+
+def my_func4(course='Aero 470'):
     print(course)
+
 
 print(my_func4())
 print(my_func4)
 
 #############
 # Return Values (slide 6)
+
+
 def my_function(x):
-  return 5 * x
+    return 5 * x
+
 
 x = my_function(3)
 
@@ -60,19 +74,23 @@ print(my_function(9))
 
 ###################
 # Recursion (slide 7)
+
+
 def tri_recursion(k):
-  if(k > 0):
-    result = k + tri_recursion(k - 1)
-    print(result)
-  else:
-    result = 0
-  return result
+    if(k > 0):
+        result = k + tri_recursion(k - 1)
+        print(result)
+    else:
+        result = 0
+    return result
+
 
 print("\n\nRecursion Example Results")
 tri_recursion(6)
 
 ###############
 # Class/Object Example
+
 
 class Dog:
     # A simple class to represent a dog
@@ -90,7 +108,8 @@ class Dog:
     def play(self):
         print('I like to play with a', self.toy)
 
-    ## Other methods like run and eat
+    # Other methods like run and eat
+
 
 piper = Dog('Piper', 'ball')
 daisy = Dog('Daisy', 'rope')
