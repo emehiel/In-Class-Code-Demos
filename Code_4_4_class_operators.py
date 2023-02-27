@@ -13,6 +13,7 @@ class Circle:
 
 C1 = Circle(3)
 C2 = Circle(4)
+C3 = Circle(2)
 
 print(C1)
 
