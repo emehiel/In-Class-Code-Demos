@@ -11,6 +11,7 @@ my_function()
 # Basic argument passing
 def my_function(l, i):
     i += 3
+    print(i)
     j = l[:]
     l[0] = 'a'
     for x in l:
