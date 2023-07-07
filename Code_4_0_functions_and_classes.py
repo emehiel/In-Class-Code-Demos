@@ -73,6 +73,28 @@ print(my_function(3))
 print(my_function(5))
 print(my_function(9))
 
+# Revist simple example
+def my_function(l, i):
+    i += 3
+    print('In my_function, i is changed to: ', i)
+    j = l[:]
+    l[0] = 'a'
+    print('In my_function, L is changed to: ', L)
+    return i
+
+
+L = [1, 2, 3]
+i = 3
+print('Before calling my_function, i equals: ', i)
+print('Before calling my_function, L equals: ', L)
+
+# notice, L is a reference type and i is a value type.
+# we used the idea of passing a reference to return more than one value from the function
+# there are other ways to do this...
+i = my_function(L, i)
+print('After calling my_function, i equals: ', i)
+print('After calling my_function, L equals: ', L)
+
 ###################
 # Recursion (slide 7)
 
