@@ -89,7 +89,7 @@ v = thisDictionary['colors']
 
 # Dictionaries are Ordered, Changeable, and do not Allow Duplicates
 
-# List methods
+# Dictionary methods
 print(D.keys())
 D.pop('a')
 
