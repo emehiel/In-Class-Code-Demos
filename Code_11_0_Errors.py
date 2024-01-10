@@ -1,5 +1,5 @@
 # Error - no colon
-#while True: print('Hello world')
+#while True print('Hello world')
 
 # Corrected
 #while True: print('Hello world')
@@ -35,6 +35,7 @@ finally:
 class zerodivision(Exception):
 	#Raised when the input value is zero
 	pass
+    # or you can do something to handle the error here
 
 try:
 	i_num = int(input("Enter a number: "))
