@@ -112,6 +112,28 @@ print("\n\nRecursion Example Results")
 tri_recursion(6)
 
 ###############
+# Function as an argument (slide 8)
+
+def apply_func(func, x):
+    return func(x)
+
+def two_times(x):
+    return 2 * x
+
+def three_times(x):
+    return 3 * x
+
+def n_times(x):
+    return x[0] * x[1]
+
+result2 = apply_func(two_times, 3)
+result3 = apply_func(three_times, 3)
+result4 = apply_func(n_times, (4, 3))
+print('the double of 3 is', result2)
+print('the triple of 3 is', result3)
+print('the quadruple of 3 is', result4)
+
+###############
 # Class/Object Example
 
 
