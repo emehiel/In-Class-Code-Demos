@@ -21,6 +21,8 @@ C4 = Circle(1)
 print(C1)
 
 C3 = C1 + C2
+# Error
+# C4 = C1 - C2
 
 print(math.pi)
 
