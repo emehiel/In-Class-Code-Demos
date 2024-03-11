@@ -19,7 +19,7 @@ def my_function(l, i):
 
 
 L = [1, 2, 3]
-i = 3
+i = 4
 
 # notice, L is a reference type and i is a value type
 my_function(L, i)

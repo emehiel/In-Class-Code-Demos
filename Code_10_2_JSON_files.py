@@ -39,7 +39,7 @@ class ContactEncoder(JSONEncoder):
 name = Name('Eric', 'Mehiel')
 address = Address(123, 'Main St.')
 
-contact = Contact(name, 41, address)
+contact = Contact(name, 49, address)
 
 contactJson = json.dumps(contact, indent=4, cls=ContactEncoder)
 print('Contact JSON')
