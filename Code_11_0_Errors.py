@@ -14,7 +14,7 @@
 try:
     #some code
     x = 1 * (10 / 0)
-except ZeroDivisionError:
+except Exception as z:
     # Executed if error in the
     # try block
     print("Can't divide by zero - the universe will explode")
@@ -23,7 +23,7 @@ else:
     print(f'The answer is {x}')
 finally:
     # Some code - always executed
-    print('Not mush to do here.')
+    print('Not much to do here.')
 
 # Raise an error in code
 #try:

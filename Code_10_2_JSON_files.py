@@ -46,5 +46,7 @@ print('Contact JSON')
 print(contactJson)
 
 j = json.loads(contactJson)
+#Contact({'name':'Eric'})
+#Contact(**{'name':'Eric', 'address': 3, 'age': 37})
 contactObj = Contact(**j)
 print(contactObj)
